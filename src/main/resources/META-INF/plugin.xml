@@ -1,0 +1,58 @@
+<idea-plugin>
+    <id>ch.ristin.icontract_hypothesis_pycharm.icontract-hypothesis-pycharm</id>
+    <name>icontract-hypothesis-pycharm</name>
+    <vendor email="marko@ristin.ch" url="https://github.com/mristin">Marko Ristin</vendor>
+
+    <change-notes><![CDATA[
+    <h2>version 1.0.0</h2>
+    <p>This is the initial kick-off version.</p>
+    <p>Features</p>
+    <ul>
+        <li>Test automatically a module or a function</li>
+        <li>Inspect strategies for a module or a function</li>
+        <li>Ghostwrite an explicit test file for a module (to standard output)</li>
+        <li>Ghostwrite an explicit test file for a module (to a file)</li>
+    </ul>
+    ]]></change-notes>
+
+    <description><![CDATA[
+    Icontract-hypothesis-pycharm allows you to automatically test your Python code using
+    <a href="https://github.com/mristin/icontract-hypothesis">icontract-hypothesis</a>
+    ]]></description>
+
+    <idea-version since-build="201.6668.115" />
+
+    <depends>com.intellij.modules.python</depends>
+
+    <actions>
+        <group id="org.intellij.sdk.pycharm.HelloWorldActions"
+               text="icontract-hypothesis"
+               popup="true"
+               compact="true"
+               class="ch.ristin.icontract_hypothesis_pycharm.ActionGroup">
+            <action id="ch.ristin.icontract_hypothesis_pycharm.TestAction"
+                    class="ch.ristin.icontract_hypothesis_pycharm.TestAction"
+                    text="Test"
+                    description="Infer the Hypothesis strategy and execute it"/>
+
+            <action id="ch.ristin.icontract_hypothesis_pycharm.InspectAction"
+                    class="ch.ristin.icontract_hypothesis_pycharm.InspectAction"
+                    text="Inspect"
+                    description="Infer the Hypothesis strategy and inspect it"/>
+
+            <action id="ch.ristin.icontract_hypothesis_pycharm.GhostwriteExplicitToStdoutAction"
+                    class="ch.ristin.icontract_hypothesis_pycharm.GhostwriteExplicitToStdoutAction"
+                    text="Ghostwrite Explicit to Stdout"
+                    description="Infer the Hypothesis strategies and ghostwrite a test file to STDOUT"/>
+
+            <action id="ch.ristin.icontract_hypothesis_pycharm.GhostwriteExplicitToAction"
+                    class="ch.ristin.icontract_hypothesis_pycharm.GhostwriteExplicitToAction"
+                    text="Ghostwrite Explicit to a File"
+                    description="Infer the Hypothesis strategies and ghostwrite a test file"/>
+
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </group>
+    </actions>
+
+</idea-plugin>
