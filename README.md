@@ -12,6 +12,10 @@ File ⟶ Settings ⟶ Plugins.
 
 Select `icontract-hypothesis-pycharm`.
 
+<img src="readme/settings.png" width=300 alt="settings" />
+<img src="readme/settings-plugins.png" width=400 alt="settings-plugins" />
+<img src="readme/settings-plugins-install.png" width=700 alt="settings-plugins-install" />
+
 **Install icontract-hypothesis**.
 As icontract-hypothesis-pycharm is only a thin wrapper around 
 [icontract-hypothesis](https://github.com/mristin/icontract-hypothesis), please install 
@@ -19,6 +23,10 @@ As icontract-hypothesis-pycharm is only a thin wrapper around
 the virtual environment of your project.
 
 For example, through: File ⟶ Settings ⟶ Project ⟶ Python Interpreter.
+
+<img src="readme/settings.png" width=300 alt="settings" />
+<img src="readme/settings-project-interpreter.png" width=600 alt="settings-project-interpreter" />
+<img src="readme/settings-install-package.png" width=600 alt="settings-install-package" />
 
 If you are writing a package using 
 [`setup.py`](https://packaging.python.org/tutorials/packaging-projects/), you might want to include
@@ -30,12 +38,12 @@ If you are writing a package using
 You can use icontract-hypothesis-pycharm from within an editor (with an open Python file) through
 the editor pop-up menu:
 
-![editor pop-up menu](readme/editor-popup.png)
+<img src="readme/editor-popup.png" width=900 alt="editor pop-up menu" />
 
 Alternatively, you can select a file in the project view and access icontract-hypothesis-pycharm
 through the project view pop-up menu:
 
-![project view pop-up menu](readme/project-view-popup.png)
+<img src="readme/project-view-popup.png" width=450 alt="project view pop-up menu" />
 
 ### Actions
 
